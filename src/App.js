@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import AddMessage from './components/AddMessage';
-import MessageCard from './components/MessageCard';
+import Message from './components/Message.jsx';
+import MessageList from './components/MessageList.jsx';
 
 function App() {
   return (
     <div className="App">
       <>
-      <h1>Title</h1>
-      <MessageCard />
-      <AddMessage />
+      <p>Title</p>
+      <MessageList />
       </>
     </div>
   );
