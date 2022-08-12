@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function Message () {
+function MessagePost () {
     const [validMessage, setValidMessage] = useState(false);
     const [form, setForm] = useState({});
     const updateForm = (event) => {
@@ -31,7 +31,7 @@ function Message () {
             <label>Message: </label>
             <textarea onChange={updateForm} value={form.message} type="text" name="message" ></textarea><br/>
             <label>Name: </label>
-            <textarea onChange={updateForm} value={form.name} type="text" name="author"></textarea><br/>
+            <textarea onChange={updateForm} value={form.name} type="text" name="name"></textarea><br/>
             <button>Submit</button>
             </form>
         </div>
@@ -41,4 +41,4 @@ function Message () {
 }
 
 
-export default Message
+export default MessagePost

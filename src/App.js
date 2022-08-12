@@ -1,6 +1,8 @@
 import './App.css';
-import Message from './components/Message.jsx';
+import MessageCard from './components/MessageCard.jsx';
+
 import MessageList from './components/MessageList.jsx';
+import MessagePost from './components/MessagePost.jsx';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <>
       <p>Title</p>
       <MessageList />
+      <MessagePost />
       </>
     </div>
   );

@@ -1,5 +1,3 @@
-import MessageList from "./MessageList";
-import Message from "./Message";
 
 
 
@@ -11,16 +9,16 @@ const sample = {
 
 
 
-const MessageCard = ()=>{
+const MessageCard = (props)=>{
     
 
     return(
         <>
         <div className="messageCard">
         <>
-        <h2>Message: {} </h2>
+        <h2>Message: {props.message.message} </h2>
         
-        <h3>Author: {} </h3>
+        <h3>Author: {props.message.name} </h3>
 
 
         
